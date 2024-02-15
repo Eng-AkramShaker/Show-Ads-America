@@ -7,6 +7,8 @@ import 'package:for_sale/sccreens/Home/tabs/profile/About_us.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Recently_viewed.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Terms_and_condtions.dart';
 
+import 'sccreens/splash/splash_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,8 +22,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //remove the debug banner
       debugShowCheckedModeBanner: false,
-      //routes to easy move between screens
+      // routes to easy move between screens
       routes: {
+        SplashScreen.routeName: (context) => const SplashScreen(),
         MyHome.routeName: (context) => const MyHome(),
         PostAnAdLogin.routeName: (context) => const PostAnAdLogin(),
         SignUp.routeName: (context) => const SignUp(),
@@ -30,8 +33,7 @@ class MyApp extends StatelessWidget {
         AboutUs.routeName: (context) => const AboutUs(),
         Commercials.routeName: (context) => const Commercials(),
       },
-      initialRoute: MyHome.routeName,
-      //
+      initialRoute: SplashScreen.routeName,
     );
   }
 }
