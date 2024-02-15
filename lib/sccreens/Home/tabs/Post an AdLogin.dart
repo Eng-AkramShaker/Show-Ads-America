@@ -3,6 +3,7 @@ import 'package:for_sale/widgets/buttons/Elevated%20Button.dart';
 import 'package:for_sale/widgets/buttons/Text_button.dart';
 import 'package:for_sale/widgets/Text_field.dart';
 import 'package:for_sale/widgets/coustm%20texts.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 import '../sign_up.dart';
 
@@ -28,7 +29,16 @@ class PostAnAdLogin extends StatelessWidget {
                   height: width * 0.05,
                 ),
                 // this the number text field
-                textField('xxxxxxx', true),
+               IntlPhoneField(
+                 decoration: InputDecoration(
+                   labelText: 'Phone Number',
+                   border: OutlineInputBorder(
+                     borderSide: BorderSide(),
+                   ),
+                 ),
+                 initialCountryCode: 'EG',
+
+               ),
                 SizedBox(
                   height: width * 0.05,
                 ),

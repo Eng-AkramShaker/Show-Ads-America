@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 class SignUp extends StatefulWidget {
   static String routeName = 'Sign up';
@@ -28,12 +29,15 @@ class _SignUpState extends State<SignUp> {
               // this the number text field
               const Padding(
                 padding: EdgeInsets.all(8.0),
-                child: TextField(
-                  keyboardType: TextInputType.number,
+                child:   IntlPhoneField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'xxxxxxx',
+                    labelText: 'Phone Number',
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(),
+                    ),
                   ),
+                  initialCountryCode: 'EG',
+
                 ),
               ),
               //this is name text field
