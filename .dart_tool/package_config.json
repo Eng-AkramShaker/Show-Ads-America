@@ -8,6 +8,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "auto_size_text",
+      "rootUri": "file:///C:/Users/CARNIVAL/AppData/Local/Pub/Cache/hosted/pub.dev/auto_size_text-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///C:/Users/CARNIVAL/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -188,7 +194,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-02-15T20:35:20.146006Z",
+  "generated": "2024-02-16T14:55:53.551232Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }

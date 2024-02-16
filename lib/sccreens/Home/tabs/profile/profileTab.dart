@@ -1,3 +1,5 @@
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/widgets/coustm%20texts.dart';
@@ -31,11 +33,13 @@ class _ProfileTabState extends State<ProfileTab> {
           child: Padding(
             padding: const EdgeInsets.all(10),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 //this row for notification icon
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+
                     Icon(
                       Icons.notifications_none_outlined,
                       size: height * width * 0.00007,
@@ -46,12 +50,14 @@ class _ProfileTabState extends State<ProfileTab> {
                 Row(
                   children: [
                     //this for profile img
-                    Icon(
-                      Icons.person_2_rounded,
-                      size: width * height * 0.0001,
+                    CircleAvatar(
+                      radius: 25,
+                      backgroundColor: Colors.grey,
+                      child:  customText( text:'AH', size: 20, ),
                     ),
+
                     SizedBox(
-                      width: width * 0.1,
+                      width: width * 0.015,
                     ),
                     const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,11 +66,13 @@ class _ProfileTabState extends State<ProfileTab> {
                           "Profile",
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                         ),
-                        Text(
-                          '''Log in or sign up to buy and sell 
-          anything''',
-                          style: TextStyle(fontWeight: FontWeight.w200, fontSize: 20),
+                        AutoSizeText(
+                            "Log in or sign up to buy and sell anything",
+                          minFontSize: 12,
+                          maxFontSize: 20,
+                          overflow: TextOverflow.ellipsis,
                         ),
+
                       ],
                     )
                   ],
@@ -100,7 +108,10 @@ class _ProfileTabState extends State<ProfileTab> {
                         child: const Text('Sign up'))
                   ],
                 ),
-                const Divider(),
+                const Divider(
+                  color: Colors.black12,
+                  thickness: 12,
+                ),
                 profileTabs(width, Icons.remove_red_eye_outlined, "Recently viewed", () {
                   Navigator.pushNamed(context, RecentlyViewed.routeName);
                 }),
@@ -110,7 +121,13 @@ class _ProfileTabState extends State<ProfileTab> {
                 }),
                 const Divider(),
                 profileTabs(width, Icons.bookmark_border, "wanted items", () {}),
-                const Divider(),
+
+                const Divider(
+                  color: Colors.black12,
+                  thickness: 12,
+                ),
+                customText(text: "settings", size:  15,color: Colors.blue,fontweight: FontWeight.bold,textAlign: TextAlign.start),
+
                 profileTabs(width, Icons.language_outlined, "Language", () {
                   //our language bottom sheet
 
@@ -245,7 +262,11 @@ class _ProfileTabState extends State<ProfileTab> {
                     },
                   );
                 }),
-                divider(),
+                const Divider(
+                  color: Colors.black12,
+                  thickness: 12,
+                ),
+                customText(text: "Contact Us", size:  15,color: Colors.blue,fontweight: FontWeight.bold,textAlign: TextAlign.start),
                 profileTabs(width, Icons.person_pin, "Agents", () {}),
                 divider(),
                 profileTabs(width, Icons.support_agent_rounded, "Support", () {}),
