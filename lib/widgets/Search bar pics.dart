@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:for_sale/widgets/coustm%20texts.dart';
 
-Widget searchBarPics(height,width,img,catText,desText){
+Widget searchBarPics(height,width,img,catText,desText,{price,hours}){
   return Container(
-    padding: EdgeInsets.all(8),
-    margin: EdgeInsets.all(9),
+    padding: const EdgeInsets.all(8),
+    margin: const EdgeInsets.all(9),
 
-    decoration: BoxDecoration(
+    decoration: const BoxDecoration(
       borderRadius: BorderRadius.all(Radius.circular(20)),
       boxShadow: [
         BoxShadow(color: Colors.black12)
@@ -21,9 +22,19 @@ Widget searchBarPics(height,width,img,catText,desText){
           children: [
             Image.network(img,height: height*0.2,width: width*0.4,),
             Text(catText, style:
-            TextStyle(fontWeight: FontWeight.w200, fontSize: 20),),
+            const TextStyle(fontWeight: FontWeight.w200, fontSize: 20),),
             Text(desText, style:
-            TextStyle(fontWeight: FontWeight.w300, fontSize: 20),),
+            const TextStyle(fontWeight: FontWeight.w300, fontSize: 20),),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                customText(text: price ??"", size: 10,color: Colors.blue),
+                const SizedBox(
+                  width: 10,
+                ),
+                customText(text: hours ?? "", size: 10,),
+              ],
+            ),
           ],
         ),
       ),
