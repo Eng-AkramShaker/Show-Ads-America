@@ -4,8 +4,8 @@ import 'package:flexible_grid_view/flexible_grid_view.dart';
 import 'package:flutter/material.dart';
 import 'package:for_sale/widgets/coustm%20texts.dart';
 
-import '../../../widgets/Cmmercials pics.dart';
-import '../../../widgets/search_bar.dart';
+import '../../../../../widgets/Cmmercials pics.dart';
+import '../../../../../widgets/search_bar.dart';
 
 class Commercials extends StatefulWidget {
   const Commercials({super.key});
@@ -90,7 +90,7 @@ class _CommercialsState extends State<Commercials> {
                               height: 250,
                               width: 220,
                               child: commercialPics(double.infinity, double.infinity,
-                                  "https://people.com/thmb/fsmp8lHFoKX5FH9JFffcHnE4Qzo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(539x0:541x2)/Popping-Bubbles-1-793efa18dea14eee899ce57412679d2a.jpg"),
+                                  "https://people.com/thmb/fsmp8lHFoKX5FH9JFffcHnE4Qzo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(539x0:541x2)/Popping-Bubbles-1-793efa18dea14eee899ce57412679d2a.jpg",context),
                             ),
                           ),
                         ),

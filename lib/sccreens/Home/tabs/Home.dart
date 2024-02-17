@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/My_Home.dart';
-import 'package:for_sale/sccreens/Home/tabs/Commercials.dart';
+
 import 'package:for_sale/widgets/Home%20categories.dart';
 import 'package:for_sale/widgets/buttons/Elevated%20Button.dart';
 import 'package:for_sale/widgets/coustm%20texts.dart';
@@ -10,6 +10,8 @@ import 'package:for_sale/widgets/search_bar.dart';
 
 import '../../../widgets/Cmmercials pics.dart';
 import '../../../widgets/Search bar pics.dart';
+import 'Commercials.dart';
+
 
 class Home extends StatefulWidget {
   const Home({super.key});
