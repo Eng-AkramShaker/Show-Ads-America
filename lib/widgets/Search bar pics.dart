@@ -1,7 +1,10 @@
+
+
 import 'package:flutter/material.dart';
+import 'package:for_sale/sccreens/Home/tabs/adds%20details.dart';
 import 'package:for_sale/widgets/coustm%20texts.dart';
 
-Widget searchBarPics(height,width,img,catText,desText,{price,hours}){
+Widget searchBarPics({required context,required height,required width,required img,required catText,required desText,price,hours}){
   return Container(
     padding: const EdgeInsets.all(8),
     margin: const EdgeInsets.all(9),
@@ -15,7 +18,9 @@ Widget searchBarPics(height,width,img,catText,desText,{price,hours}){
     child: Padding(
       padding: const EdgeInsets.all(9.0),
       child: InkWell(
-        onTap: (){},
+        onTap: (){
+          Navigator.pushNamed(context, AddsDetails.routeName);
+        },
         child: Column(
 
           crossAxisAlignment: CrossAxisAlignment.center,
