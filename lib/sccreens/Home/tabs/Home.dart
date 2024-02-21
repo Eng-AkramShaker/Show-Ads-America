@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/My_Home.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
 
 import 'package:for_sale/widgets/Home%20categories.dart';
 import 'package:for_sale/widgets/buttons/Elevated%20Button.dart';
@@ -46,7 +47,9 @@ class _HomeState extends State<Home> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.car, "Automotive", () {}),
+                  homeCategories(FontAwesomeIcons.car, "Automotive", () {
+                    Navigator.pushNamed(context, Automotive.routeName);
+                  }),
                   homeCategories(FontAwesomeIcons.home, "property", () {}),
                   homeCategories(FontAwesomeIcons.laptop, "Electronics", () {}),
                 ],

@@ -1,11 +1,11 @@
 
 import 'package:flutter/material.dart';
 
-Widget searchBar(){
+Widget searchBar({hintText}){
   return TextField(
     decoration: InputDecoration(
       border: OutlineInputBorder(),
-      hintText: 'Search for anything',
+      hintText: hintText??'Search for anything',
 
     ),
   );
