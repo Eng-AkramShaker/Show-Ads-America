@@ -5,6 +5,8 @@ import 'package:for_sale/sccreens/Home/tabs/Commercials.dart';
 import 'package:for_sale/sccreens/Home/tabs/Post%20an%20AdLogin.dart';
 import 'package:for_sale/sccreens/Home/tabs/adds%20details.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/for%20sale.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/About_us.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Recently_viewed.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Terms_and_condtions.dart';
@@ -36,6 +38,8 @@ class MyApp extends StatelessWidget {
         Commercials.routeName: (context) => const Commercials(),
         AddsDetails.routeName: (context) => const AddsDetails(),
         Automotive.routeName: (context) => const Automotive(),
+        Property.routeName: (context) => const Property(),
+        ForSaleProperty.routeName: (context) => const ForSaleProperty(),
       },
       initialRoute: SplashScreen.routeName,
     );
