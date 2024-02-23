@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/My_Home.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/electronics/Electronics.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
 
 import 'package:for_sale/widgets/Home%20categories.dart';
@@ -54,7 +55,9 @@ class _HomeState extends State<Home> {
                   homeCategories(FontAwesomeIcons.home, "property", () {
                     Navigator.pushNamed(context, Property.routeName);
                   }),
-                  homeCategories(FontAwesomeIcons.laptop, "Electronics", () {}),
+                  homeCategories(FontAwesomeIcons.laptop, "Electronics", () {
+                    Navigator.pushNamed(context, Electronics.routeName);
+                  }),
                 ],
               ),
               const SizedBox(

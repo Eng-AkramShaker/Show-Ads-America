@@ -10,9 +10,9 @@ import '../../../../../widgets/divider.dart';
 import '../../../../../widgets/search_bar.dart';
 import '../automative/Automotive Cat.dart';
 
-class ForSaleProperty extends StatelessWidget {
-  static String routeName="For Sale Property";
-  const ForSaleProperty({super.key});
+class Electronics extends StatelessWidget {
+  static String routeName="Electronics";
+  const Electronics({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,34 +25,19 @@ class ForSaleProperty extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //this rows for the categories of automotive
-              searchBar(hintText: "For Sale"),
+              searchBar(hintText: routeName),
               divider(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.home, "House For Sale", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "House For Sale"),));
+                  homeCategories(FontAwesomeIcons.mobile, "Mobiles", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Mobiles"),));
                   }),
-                  homeCategories(FontAwesomeIcons.home, "Building Or Floors", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Building Or Floors"),));
+                  homeCategories(FontAwesomeIcons.tablet, "Tablets", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Tablets"),));
                   }),
-                  homeCategories(FontAwesomeIcons.home, "Apartment For Sale", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText:"Apartment For Sale"),));
-                  }),
-                ],
-              ),
-              const SizedBox(height: 10,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  homeCategories(Icons.build, "Demolishing", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Demolishing"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.restroom, "Lounge For Sale", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Lounge For Sale"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.restroom, "Chalet For Sale", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Chalet For Sale"),));
+                  homeCategories(FontAwesomeIcons.camera, "Cameras", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Cameras"),));
                   }),
                 ],
               ),
@@ -60,14 +45,14 @@ class ForSaleProperty extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.landmarkFlag, "Farms For Sale", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Farms For Sale"),));
+                  homeCategories(FontAwesomeIcons.gamepad, "Video Games", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Video Games"),));
                   }),
-                  homeCategories(FontAwesomeIcons.landmark, "Land", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Land"),));
+                  homeCategories(FontAwesomeIcons.simCard, "SIM", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "SIM"),));
                   }),
-                  homeCategories(FontAwesomeIcons.gears, "Residential Certificate", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Residential Certificate"),));
+                  homeCategories(FontAwesomeIcons.headset, "Audio", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Audio"),));
                   }),
                 ],
               ),
@@ -75,21 +60,47 @@ class ForSaleProperty extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.certificate, "Commercial Land", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Commercial Land"),));
+                  homeCategories(FontAwesomeIcons.gear, "Electronic Service", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Electronic Service"),));
                   }),
-                  homeCategories(FontAwesomeIcons.shop, "Shop For Sale", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Shop For Sale"),));
+                  homeCategories(FontAwesomeIcons.laptop, "Laptop & Computer", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Laptop & Computer"),));
                   }),
-                  homeCategories(FontAwesomeIcons.building, "Company", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Company"),));
+                  homeCategories(Icons.signal_cellular_alt_sharp, "Devices & Networking", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Devices & Networking"),));
                   }),
                 ],
               ),
               const SizedBox(height: 10,),
-              homeCategories(FontAwesomeIcons.search, "Wanted Property", (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Wanted Property"),));
-              }),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(Icons.watch, "Smart Watch", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Smart Watch"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.tv, "Smart TV", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Smart TV"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.homeLg, "Home Appliance", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Home Appliance"),));
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(FontAwesomeIcons.satelliteDish, "Receiver", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Receiver"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.search, "Wanted Devices", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Wanted Devices"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.shoppingBasket, "others", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "others"),));
+                  }),
+                ],
+              ),
               divider(),
               ImageSlideshow(
                   autoPlayInterval: 2,
@@ -103,7 +114,14 @@ class ForSaleProperty extends StatelessWidget {
                       fit: BoxFit.cover,),
                   ] ),
               divider(),
-
+              customText(text: "Businesses", size: 20,fontweight: FontWeight.bold),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(FontAwesomeIcons.tablets, "Electronic Shops", (){}),
+                ],
+              ),
+              divider(),
               //this is featured adds section
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -170,6 +188,6 @@ class ForSaleProperty extends StatelessWidget {
           ),
         ),
       ),
-    );;
+    );
   }
 }
