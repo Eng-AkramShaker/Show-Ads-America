@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/My_Home.dart';
-import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
-import 'package:for_sale/sccreens/Home/tabs/home%20tabs/electronics/Electronics.dart';
-import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
-
+import 'package:for_sale/sccreens/Home/tabs/Commercials.dart';
 import 'package:for_sale/widgets/Home%20categories.dart';
 import 'package:for_sale/widgets/buttons/Elevated%20Button.dart';
 import 'package:for_sale/widgets/coustm%20texts.dart';
@@ -13,8 +10,6 @@ import 'package:for_sale/widgets/search_bar.dart';
 
 import '../../../widgets/Cmmercials pics.dart';
 import '../../../widgets/Search bar pics.dart';
-import 'Commercials.dart';
-
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -49,15 +44,9 @@ class _HomeState extends State<Home> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.car, "Automotive", () {
-                    Navigator.pushNamed(context, Automotive.routeName);
-                  }),
-                  homeCategories(FontAwesomeIcons.home, "property", () {
-                    Navigator.pushNamed(context, Property.routeName);
-                  }),
-                  homeCategories(FontAwesomeIcons.laptop, "Electronics", () {
-                    Navigator.pushNamed(context, Electronics.routeName);
-                  }),
+                  homeCategories(FontAwesomeIcons.car, "Automotive", () {}),
+                  homeCategories(FontAwesomeIcons.home, "property", () {}),
+                  homeCategories(FontAwesomeIcons.laptop, "Electronics", () {}),
                 ],
               ),
               const SizedBox(
@@ -103,35 +92,35 @@ class _HomeState extends State<Home> {
                   //here commercials adds
                   children: [
                     searchBarPics(
-                        height: height,
-                        width: width,
-                        img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                        catText: "category",
-                        desText: "Description",context: context),
+                        height,
+                        width,
+                        "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                        "category",
+                        "Description"),
                     searchBarPics(
-                        height: height,
-                        width: width,
-                        img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                        catText: "category",
-                        desText: "Description",context: context),
+                        height,
+                        width,
+                        "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                        "category",
+                        "Description"),
                     searchBarPics(
-                        height: height,
-                        width: width,
-                        img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                        catText: "category",
-                        desText: "Description",context: context),
+                        height,
+                        width,
+                        "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                        "category",
+                        "Description"),
                     searchBarPics(
-                        height: height,
-                        width: width,
-                        img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                        catText: "category",
-                        desText: "Description",context: context),
+                        height,
+                        width,
+                        "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                        "category",
+                        "Description"),
                     searchBarPics(
-                        height: height,
-                        width: width,
-                        img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                        catText: "category",
-                        desText: "Description",context: context),
+                        height,
+                        width,
+                        "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                        "category",
+                        "Description"),
                   ],
                 ),
               ),
@@ -169,23 +158,23 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: [
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                         ],
                       ),
                     ),
@@ -216,23 +205,23 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: [
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                         ],
                       ),
                     ),
@@ -263,23 +252,23 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: [
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                         ],
                       ),
                     ),
@@ -310,23 +299,23 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: [
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                         ],
                       ),
                     ),
@@ -357,23 +346,23 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: [
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                         ],
                       ),
                     ),
@@ -404,23 +393,23 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: [
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                              height: height,
-                              width: width,
-                              img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                             catText: "category",
-                              desText:"Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                           searchBarPics(
-                             height: height,
-                              width: width,
-                             img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                              catText: "category",
-                              desText: "Description",context: context),
+                              height,
+                              width,
+                              "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                              "category",
+                              "Description"),
                         ],
                       ),
                     ),

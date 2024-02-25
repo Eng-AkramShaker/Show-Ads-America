@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:for_sale/sccreens/Home/My_Home.dart';
+import 'package:for_sale/sccreens/auth/login.dart';
 
 class SplashScreen extends StatefulWidget {
   static String routeName = 'splash';
@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
       () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (_) => const MyHome(),
+            builder: (_) => const Login(),
           ),
         );
       },
@@ -70,18 +70,19 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        _controller.forward(from: 0);
-      },
-      child: WillPopScope(
-        onWillPop: () async => false,
-        child: AnimatedBuilder(
-          animation: _controller,
-          builder: (context, _) {
-            final rotation = 2 * pi * (_rotateAnimation.value);
-            return Material(
-              child: Transform(
+    return Scaffold(
+      backgroundColor: const Color(0xff251F34),
+      body: GestureDetector(
+        onTap: () {
+          _controller.forward(from: 0);
+        },
+        child: WillPopScope(
+          onWillPop: () async => false,
+          child: AnimatedBuilder(
+            animation: _controller,
+            builder: (context, _) {
+              final rotation = 2 * pi * (_rotateAnimation.value);
+              return Transform(
                 alignment: Alignment.center,
                 transform: Matrix4.identity()
                   ..rotateZ(rotation)
@@ -89,14 +90,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                     _scaleAnimation.value,
                   ),
                 child: Center(
-                  child: Image.asset(
-                    'assets/logo.png',
-                    height: 300,
-                  ),
+                  child: Image.asset('assets/images/logo.png', height: 300),
                 ),
-              ),
-            );
-          },
+              );
+            },
+          ),
         ),
       ),
     );

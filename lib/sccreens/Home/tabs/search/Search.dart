@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:for_sale/widgets/buttons/Text_button.dart';
 import 'package:for_sale/widgets/coustm%20texts.dart';
-import 'package:for_sale/widgets/divider.dart';
 
 import '../../../../widgets/Search bar pics.dart';
 import '../../../../widgets/Trending words.dart';
@@ -41,118 +40,57 @@ class Search extends StatelessWidget {
                   child: Row(
                     children: [
                       searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
+                          height,
+                          width,
+                          "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                          "category",
+                          "Description"),
                       searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
+                          height,
+                          width,
+                          "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                          "category",
+                          "Description"),
                       searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
+                          height,
+                          width,
+                          "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                          "category",
+                          "Description"),
                       searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
+                          height,
+                          width,
+                          "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                          "category",
+                          "Description"),
                       searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
+                          height,
+                          width,
+                          "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                          "category",
+                          "Description"),
                       searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context),
+                          height,
+                          width,
+                          "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
+                          "category",
+                          "Description"),
                     ],
                   )),
-              divider(),
               customText(text: "Trending", size: 20, fontweight: FontWeight.bold),
 
               SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          trendingWords(height, width, "Trend word"),
-                          trendingWords(height, width, "Trend word"),
-                          trendingWords(height, width, "Trend word"),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          trendingWords(height, width, "Trend word"),
-                          trendingWords(height, width, "Trend word"),
-                          trendingWords(height, width, "Trend word"),
-                        ],
-                      ),
-                    ],
-                  )),
-              divider(),
-              customText(text: "Recommended", size: 20, fontweight: FontWeight.bold),
-              SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
-                      searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
-                      searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
-                      searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
-                  searchBarPics(
-                      height: height,
-                      width: width,
-                      img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                      catText: "category",
-                      desText: "Description",context: context,
-                          price: "28 KWD",hours: "2 hours"),
-                      searchBarPics(
-                          height: height,
-                          width: width,
-                          img: "https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
-                          catText: "category",
-                          desText: "Description",context: context),
+                      trendingWords(height, width, "Trend word"),
+                      trendingWords(height, width, "Trend word"),
+                      trendingWords(height, width, "Trend word"),
+                      trendingWords(height, width, "Trend word"),
+                      trendingWords(height, width, "Trend word"),
+                      trendingWords(height, width, "Trend word"),
+                      trendingWords(height, width, "Trend word"),
+                      trendingWords(height, width, "Trend word"),
                     ],
                   )),
             ],
