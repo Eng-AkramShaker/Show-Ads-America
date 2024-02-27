@@ -24,7 +24,7 @@ class Automotive extends StatelessWidget{
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //this rows for the categories of automotive
-              searchBar(hintText: "Automotive"),
+              searchBar(hintText: routeName),
               divider(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -87,8 +87,6 @@ class Automotive extends StatelessWidget{
               ),
               divider(),
               ImageSlideshow(
-                autoPlayInterval: 2,
-                  isLoop: true,
                   children: [
                     Image.network("https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
                       fit: BoxFit.cover,),

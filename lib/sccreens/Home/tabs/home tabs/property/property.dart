@@ -49,8 +49,6 @@ class Property extends StatelessWidget {
               const SizedBox(height: 10,),
               divider(),
               ImageSlideshow(
-                  autoPlayInterval: 2,
-                  isLoop: true,
                   children: [
                     Image.network("https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
                       fit: BoxFit.cover,),

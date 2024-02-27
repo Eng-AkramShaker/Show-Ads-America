@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -10,9 +11,9 @@ import '../../../../../widgets/divider.dart';
 import '../../../../../widgets/search_bar.dart';
 import '../automative/Automotive Cat.dart';
 
-class Electronics extends StatelessWidget {
-  static String routeName="Electronics";
-  const Electronics({super.key});
+class Contracting extends StatelessWidget {
+  static String routeName="Contracting";
+  const Contracting({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,29 +31,14 @@ class Electronics extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.mobile, "Mobiles", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Mobiles"),));
+                  homeCategories(FontAwesomeIcons.box, "Bugs Exterm...", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Bugs Exterminator"),));
                   }),
-                  homeCategories(FontAwesomeIcons.tablet, "Tablets", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Tablets"),));
+                  homeCategories(FontAwesomeIcons.water, "Plumber", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Plumber"),));
                   }),
-                  homeCategories(FontAwesomeIcons.camera, "Cameras", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Cameras"),));
-                  }),
-                ],
-              ),
-              const SizedBox(height: 10,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  homeCategories(FontAwesomeIcons.gamepad, "Video Games", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Video Games"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.simCard, "SIM", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "SIM"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.headset, "Audio", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Audio"),));
+                  homeCategories(FontAwesomeIcons.lock, "Locksmith", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Locksmith"),));
                   }),
                 ],
               ),
@@ -60,29 +46,14 @@ class Electronics extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.gear, "Electronic Service", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Electronic Service"),));
+                  homeCategories(Icons.cleaning_services, "Duct Cleaning", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Duct Cleaning"),));
                   }),
-                  homeCategories(FontAwesomeIcons.laptop, "Laptop & Computer", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Laptop & Computer"),));
+                  homeCategories(FontAwesomeIcons.airFreshener, "AC Services", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "AC Services"),));
                   }),
-                  homeCategories(Icons.signal_cellular_alt_sharp, "Devices & Networking", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Devices & Networking"),));
-                  }),
-                ],
-              ),
-              const SizedBox(height: 10,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  homeCategories(Icons.watch, "Smart Watch", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Smart Watch"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.tv, "Smart TV", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Smart TV"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.homeLg, "Home Appliance", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Home Appliance"),));
+                  homeCategories(FontAwesomeIcons.paintRoller, "Painter", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Painter"),));
                   }),
                 ],
               ),
@@ -90,19 +61,92 @@ class Electronics extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.satelliteDish, "Receiver", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Receiver"),));
+                  homeCategories(FontAwesomeIcons.pieChart, "Decoration", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Decoration"),));
                   }),
-                  homeCategories(FontAwesomeIcons.search, "Wanted Devices", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Wanted Devices"),));
+                  homeCategories(Icons.cleaning_services_sharp, "Gardener", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Gardener"),));
                   }),
-                  homeCategories(FontAwesomeIcons.shoppingBasket, "others", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "others"),));
+                  homeCategories(Icons.warehouse_sharp, "Home Appliance", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Home Appliance maint..."),));
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(Icons.elevator, "Elevators", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Elevators"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.hammer, "Carpenter", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Carpenter"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.helmetSafety, "Metalwork", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Metalwork"),));
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(Icons.sensor_window_outlined, "Aluminum", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Aluminum"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.doorOpen, "Doors", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Doors"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.home, "builders", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "builders"),));
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(Icons.other_houses, "Ceramic", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Ceramic"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.glassMartini, "Glass", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Glass"),));
+                  }),
+                  homeCategories(Icons.roofing, "Insulated Roof", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Insulated Roof"),));
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(Icons.electric_bolt_outlined, "Electrician", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Electrician"),));
+                  }),
+                  homeCategories(Icons.vertical_align_center, "Ventilation Works", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Ventilation Works"),));
+                  }),
+                  homeCategories(Icons.propane_tank, "Water Tanks", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Water Tanks"),));
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(Icons.agriculture, "Agricultural Product", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Agricultural Product"),));
+                  }),
+                  homeCategories(Icons.calendar_view_month_sharp, "Building Materials", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Building Materials"),));
                   }),
                 ],
               ),
               divider(),
               ImageSlideshow(
+
                   children: [
                     Image.network("https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
                       fit: BoxFit.cover,),
@@ -111,14 +155,6 @@ class Electronics extends StatelessWidget {
                     Image.network("https://hips.hearstapps.com/hmg-prod/images/kitchen-remodel-ideas-hbx120121kristinfine-008-1651168839.jpg",
                       fit: BoxFit.cover,),
                   ] ),
-              divider(),
-              customText(text: "Businesses", size: 20,fontweight: FontWeight.bold),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  homeCategories(FontAwesomeIcons.tablets, "Electronic Shops", (){}),
-                ],
-              ),
               divider(),
               //this is featured adds section
               Row(
