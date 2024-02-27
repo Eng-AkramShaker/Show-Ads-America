@@ -9,6 +9,7 @@ import '../../../../../widgets/coustm texts.dart';
 import '../../../../../widgets/divider.dart';
 import '../../../../../widgets/search_bar.dart';
 import '../automative/Automotive Cat.dart';
+import '../fratured adds.dart';
 
 class ForSaleProperty extends StatelessWidget {
   static String routeName="For Sale Property";
@@ -107,7 +108,9 @@ class ForSaleProperty extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   customText(text: "Featured Ads", size: 20,fontweight: FontWeight.bold),
-                  textButton("See All", (){},textColor: Colors.blue),
+                  textButton("See All", (){
+                    Navigator.pushNamed(context, FeaturedAds.routeName);
+                  },textColor: Colors.blue),
                 ],
               ),
               customText(text: "Don't miss out on today's best deals", size: 15,color: Colors.grey),

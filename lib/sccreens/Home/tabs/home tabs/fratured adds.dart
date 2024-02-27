@@ -4,15 +4,15 @@ import 'package:for_sale/widgets/coustm%20texts.dart';
 import '../../../../widgets/Search bar pics.dart';
 
 
-class RecentlyViewed extends StatefulWidget {
-  static String routeName ='Recently Viewed';
-  const RecentlyViewed({super.key});
+class FeaturedAds extends StatefulWidget {
+  static String routeName ='Featured Ads';
+  const FeaturedAds({super.key});
 
   @override
-  State<RecentlyViewed> createState() => _RecentlyViewedState();
+  State<FeaturedAds> createState() => _FeaturedAdsState();
 }
 
-class _RecentlyViewedState extends State<RecentlyViewed> {
+class _FeaturedAdsState extends State<FeaturedAds> {
   // this is an object to take function from search class
 
 
@@ -22,14 +22,14 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
     var width =MediaQuery.sizeOf(context).width;
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
-        title: customText(text: 'My Recently Viewed', size: 20,),
+        iconTheme: const IconThemeData(color: Colors.black),
+        title: customText(text: 'Featured Ads', size: 20,),
 
         backgroundColor: Colors.white,
       ),
       body: GridView(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2
+            crossAxisCount: 2
         ),
         children: [
           //this the function of search under pinned adds

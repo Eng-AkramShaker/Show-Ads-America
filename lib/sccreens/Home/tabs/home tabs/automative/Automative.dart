@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automotive%20Cat.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/fratured%20adds.dart';
 import 'package:for_sale/widgets/Home%20categories.dart';
 import 'package:for_sale/widgets/Search%20bar%20pics.dart';
 import 'package:for_sale/widgets/buttons/Text_button.dart';
@@ -111,7 +112,9 @@ class Automotive extends StatelessWidget{
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   customText(text: "Featured Ads", size: 20,fontweight: FontWeight.bold),
-                  textButton("See All", (){},textColor: Colors.blue),
+                  textButton("See All", (){
+                    Navigator.pushNamed(context, FeaturedAds.routeName);
+                  },textColor: Colors.blue),
                 ],
               ),
               customText(text: "Don't miss out on today's best deals", size: 15,color: Colors.grey),
