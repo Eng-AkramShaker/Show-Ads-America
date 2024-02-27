@@ -5,6 +5,7 @@ import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.da
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/contracting/contracting.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/electronics/Electronics.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/serevices/services.dart';
 
 import 'package:for_sale/widgets/Home%20categories.dart';
 import 'package:for_sale/widgets/buttons/Elevated%20Button.dart';
@@ -70,7 +71,9 @@ class _HomeState extends State<Home> {
                   homeCategories(FontAwesomeIcons.buildingCircleCheck, "Contracting", () {
                     Navigator.pushNamed(context, Contracting.routeName);
                   }),
-                  homeCategories(FontAwesomeIcons.servicestack, "Services", () {}),
+                  homeCategories(FontAwesomeIcons.servicestack, "Services", () {
+                    Navigator.pushNamed(context, Services.routeName);
+                  }),
                   homeCategories(FontAwesomeIcons.campground, "Camping", () {}),
                 ],
               ),

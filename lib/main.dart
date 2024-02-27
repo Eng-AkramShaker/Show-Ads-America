@@ -10,6 +10,7 @@ import 'package:for_sale/sccreens/Home/tabs/home%20tabs/electronics/Electronics.
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/fratured%20adds.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/for%20sale.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/serevices/services.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/About_us.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Recently_viewed.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Terms_and_condtions.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         Electronics.routeName: (context) => const Electronics(),
         Contracting.routeName: (context) => const Contracting(),
         FeaturedAds.routeName: (context) => const FeaturedAds(),
+        Services.routeName: (context) => const Services(),
       },
       initialRoute: SplashScreen.routeName,
     );
