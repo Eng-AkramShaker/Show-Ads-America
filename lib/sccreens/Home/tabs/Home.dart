@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/My_Home.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/camping/camping.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/contracting/contracting.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/electronics/Electronics.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
@@ -74,7 +75,9 @@ class _HomeState extends State<Home> {
                   homeCategories(FontAwesomeIcons.servicestack, "Services", () {
                     Navigator.pushNamed(context, Services.routeName);
                   }),
-                  homeCategories(FontAwesomeIcons.campground, "Camping", () {}),
+                  homeCategories(FontAwesomeIcons.campground, "Camping", () {
+                    Navigator.pushNamed(context, Camping.routeName);
+                  }),
                 ],
               ),
               const SizedBox(
