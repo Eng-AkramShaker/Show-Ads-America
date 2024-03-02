@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/My_Home.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/animals/animals.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/camping/camping.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/contracting/contracting.dart';
@@ -86,7 +87,9 @@ class _HomeState extends State<Home> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.dog, "Animals", () {}),
+                  homeCategories(FontAwesomeIcons.dog, "Animals", () {
+                    Navigator.pushNamed(context, Animals.routeName);
+                  }),
                   homeCategories(FontAwesomeIcons.tshirt, "Family", () {}),
                   homeCategories(FontAwesomeIcons.gifts, "Gifts", () {}),
                 ],

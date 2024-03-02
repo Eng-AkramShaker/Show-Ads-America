@@ -4,6 +4,7 @@ import 'package:for_sale/sccreens/Home/sign_up.dart';
 import 'package:for_sale/sccreens/Home/tabs/Commercials.dart';
 import 'package:for_sale/sccreens/Home/tabs/Post%20an%20AdLogin.dart';
 import 'package:for_sale/sccreens/Home/tabs/adds%20details.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/animals/animals.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/camping/camping.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/contracting/contracting.dart';
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
         FeaturedAds.routeName: (context) => const FeaturedAds(),
         Services.routeName: (context) => const Services(),
         Camping.routeName: (context) => const Camping(),
+        Animals.routeName: (context) => const Animals(),
       },
       initialRoute: SplashScreen.routeName,
     );

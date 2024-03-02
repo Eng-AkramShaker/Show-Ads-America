@@ -10,9 +10,9 @@ import 'package:for_sale/widgets/coustm%20texts.dart';
 import 'package:for_sale/widgets/divider.dart';
 import 'package:for_sale/widgets/search_bar.dart';
 
-class Camping extends StatelessWidget{
-  static String routeName="Camping";
-  const Camping({super.key});
+class Animals extends StatelessWidget{
+  static String routeName="Animals";
+  const Animals({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,29 +30,14 @@ class Camping extends StatelessWidget{
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(Icons.toys, "Trampoline for Rent", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Trampoline for Rent"),));
+                  homeCategories(FontAwesomeIcons.dog, "Dogs", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Dogs"),));
                   }),
-                  homeCategories(FontAwesomeIcons.fire, "Camping Stuff", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Camping Stuff"),));
+                  homeCategories(FontAwesomeIcons.cat, "Cats", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Cats"),));
                   }),
-                  homeCategories(FontAwesomeIcons.tent, "Tents", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Tents"),));
-                  }),
-                ],
-              ),
-              const SizedBox(height: 10,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  homeCategories(FontAwesomeIcons.gun, "Hunting Equipment", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Hunting Equipment"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.gear, "Generators", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Generators"),));
-                  }),
-                  homeCategories(FontAwesomeIcons.shoppingBag, "Picnics", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Picnics"),));
+                  homeCategories(FontAwesomeIcons.kiwiBird, "Birds", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Birds"),));
                   }),
                 ],
               ),
@@ -60,14 +45,14 @@ class Camping extends StatelessWidget{
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.sun, "Solar power", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Solar power"),));
+                  homeCategories(FontAwesomeIcons.horse, "Horses", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Horses"),));
                   }),
-                  homeCategories(FontAwesomeIcons.caravan, "Caravans", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Caravans"),));
+                  homeCategories(FontAwesomeIcons.deploydog, "Sheep", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Sheep"),));
                   }),
-                  homeCategories(FontAwesomeIcons.tent, "Camps For Rent", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Camps For Rent"),));
+                  homeCategories(FontAwesomeIcons.cat, "Camel", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Camel"),));
                   }),
                 ],
               ),
@@ -75,14 +60,29 @@ class Camping extends StatelessWidget{
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(Icons.indeterminate_check_box_rounded, "Coals", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Coals"),));
+                  homeCategories(FontAwesomeIcons.shieldCat, "Animal Equipment", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Animal & Pet Equipment"),));
                   }),
-                  homeCategories(FontAwesomeIcons.satelliteDish, "Satellite Camping", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Satellite Camping"),));
+                  homeCategories(FontAwesomeIcons.bowlFood, "Animal Food", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Animal & Pet Food"),));
                   }),
-                  homeCategories(FontAwesomeIcons.bars, "Barbecue", (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Barbecue"),));
+                  homeCategories(FontAwesomeIcons.dog, "Dogs Services", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Dogs Services"),));
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  homeCategories(FontAwesomeIcons.horseHead, "Horse Services", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Horse Services"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.servicestack, "Sheep Services", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Sheep Services"),));
+                  }),
+                  homeCategories(FontAwesomeIcons.shoppingBag, "Other Animals", (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AutomotiveCat(hintText: "Other Animals"),));
                   }),
                 ],
               ),
