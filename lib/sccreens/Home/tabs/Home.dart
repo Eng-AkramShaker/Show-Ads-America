@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:for_sale/sccreens/Home/My_Home.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/Furniture/firnture.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/Gifts/gifts.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/Jobs/jobs.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/Others/others.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/animals/animals.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/automative/Automative.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/camping/camping.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/contracting/contracting.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/electronics/Electronics.dart';
+import 'package:for_sale/sccreens/Home/tabs/home%20tabs/family/family.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/serevices/services.dart';
 
@@ -90,8 +95,12 @@ class _HomeState extends State<Home> {
                   homeCategories(FontAwesomeIcons.dog, "Animals", () {
                     Navigator.pushNamed(context, Animals.routeName);
                   }),
-                  homeCategories(FontAwesomeIcons.tshirt, "Family", () {}),
-                  homeCategories(FontAwesomeIcons.gifts, "Gifts", () {}),
+                  homeCategories(FontAwesomeIcons.tshirt, "Family", () {
+                    Navigator.pushNamed(context, Family.routeName);
+                  }),
+                  homeCategories(FontAwesomeIcons.gifts, "Gifts", () {
+                    Navigator.pushNamed(context, Gifts.routeName);
+                  }),
                 ],
               ),
               const SizedBox(
@@ -100,9 +109,15 @@ class _HomeState extends State<Home> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  homeCategories(FontAwesomeIcons.chair, "Furniture", () {}),
-                  homeCategories(FontAwesomeIcons.moneyCheckDollar, "Jobs", () {}),
-                  homeCategories(FontAwesomeIcons.shoppingBasket, "Others", () {}),
+                  homeCategories(FontAwesomeIcons.chair, "Furniture", () {
+                    Navigator.pushNamed(context, Furniture.routeName);
+                  }),
+                  homeCategories(FontAwesomeIcons.moneyCheckDollar, "Jobs", () {
+                    Navigator.pushNamed(context, Jobs.routeName);
+                  }),
+                  homeCategories(FontAwesomeIcons.shoppingBasket, "Others", () {
+                    Navigator.pushNamed(context, Others.routeName);
+                  }),
                 ],
               ),
               const SizedBox(
