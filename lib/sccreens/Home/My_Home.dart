@@ -3,6 +3,7 @@ import 'package:for_sale/sccreens/Home/tabs/Commercials.dart';
 
 import 'package:for_sale/sccreens/Home/tabs/Home.dart';
 import 'package:for_sale/sccreens/Home/tabs/Post%20an%20AdLogin.dart';
+import 'package:for_sale/sccreens/Home/tabs/post%20and%20login.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/profileTab.dart';
 import 'package:for_sale/sccreens/Home/tabs/search/Search.dart';
 
@@ -56,5 +57,5 @@ class _MyHomeState extends State<MyHome> {
   }
 
   //this my tabs list for bottom nav bar
-  List<Widget> tabs = [const Home(), const Commercials(), const PostAnAdLogin(), const Search(), const ProfileTab()];
+  List<Widget> tabs = [const Home(), const Commercials(), const PostAndLogin(), const Search(), const ProfileTab()];
 }

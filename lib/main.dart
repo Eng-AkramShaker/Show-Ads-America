@@ -18,6 +18,7 @@ import 'package:for_sale/sccreens/Home/tabs/home%20tabs/fratured%20adds.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/for%20sale.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/property/property.dart';
 import 'package:for_sale/sccreens/Home/tabs/home%20tabs/serevices/services.dart';
+import 'package:for_sale/sccreens/Home/tabs/post%20and%20login.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/About_us.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Recently_viewed.dart';
 import 'package:for_sale/sccreens/Home/tabs/profile/Terms_and_condtions.dart';
@@ -62,6 +63,7 @@ class MyApp extends StatelessWidget {
         Furniture.routeName: (context) => const Furniture(),
         Jobs.routeName: (context) => const Jobs(),
         Others.routeName: (context) => const Others(),
+        PostAndLogin.routeName: (context) => const PostAndLogin(),
       },
       initialRoute: SplashScreen.routeName,
     );
